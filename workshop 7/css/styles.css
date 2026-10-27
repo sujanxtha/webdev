@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 25px auto;
+  padding: 0 15px;
+  line-height: 1.5;
+}
+button { margin: 4px; padding: 6px 10px; cursor: pointer; }
+#jsondata, #rawdata, #weatherdata {
+  border: 1px solid #bbb;
+  padding: 12px;
+  margin: 12px 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+table { border-collapse: collapse; }
+th, td { border: 1px solid #bbb; padding: 6px; text-align: left; }
+pre { overflow-x: auto; }
+#jsondata {
+  white-space: pre-wrap;
+}
