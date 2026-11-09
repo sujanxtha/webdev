@@ -1,0 +1,199 @@
+
+/* ===================================
+   Workshop 8: Weather Application
+   Parsing XML with JavaScript
+=================================== */
+
+/* General Page Styling */
+* {
+    box-sizing: border-box;
+}
+
+body.ws8 {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    color: #1e293b;
+    margin: 0;
+    padding: 30px;
+    line-height: 1.7;
+    min-height: 100vh;
+}
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    color: #1d4ed8;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Section Headings */
+h2 {
+    color: #1e40af;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Horizontal Lines */
+hr {
+    border: none;
+    border-top: 1px solid #bfdbfe;
+    margin: 25px 0;
+}
+
+/* Links */
+a {
+    color: #2563eb;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Exercise Instructions */
+ul {
+    background-color: #ffffff;
+    padding: 25px 25px 25px 45px;
+    border-radius: 10px;
+    border-left: 5px solid #3b82f6;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+/* Dropdown and Search Input */
+select,
+input {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #93c5fd;
+    border-radius: 8px;
+    background-color: white;
+    color: #1e293b;
+    margin: 5px;
+    max-width: 100%;
+}
+
+select {
+    min-width: 200px;
+    cursor: pointer;
+}
+
+input {
+    width: 260px;
+}
+
+/* Focus Effect */
+select:focus,
+input:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+/* Buttons */
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.2s ease;
+}
+
+/* Button Hover */
+button:hover {
+    background-color: #1d4ed8;
+}
+
+button:active {
+    background-color: #1e40af;
+}
+
+/* Weather Results Box */
+#weatherdata {
+    background-color: #ffffff;
+    border: 1px solid #bfdbfe;
+    border-left: 5px solid #2563eb;
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    min-height: 100px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    font-size: 17px;
+}
+
+/* Weather City Heading */
+#weatherdata h3 {
+    color: #1d4ed8;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Weather Details */
+#weatherdata p {
+    background-color: #eff6ff;
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+/* Fetch Weather Button */
+#fetchWeather {
+    background-color: #059669;
+    padding: 14px 24px;
+}
+
+#fetchWeather:hover {
+    background-color: #047857;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    body.ws8 {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    select,
+    input {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    button {
+        margin: 8px 0;
+    }
+
+    #weatherdata {
+        padding: 15px;
+    }
+
+    ul {
+        padding: 20px 20px 20px 35px;
+    }
+}
