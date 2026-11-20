@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Product Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Simple Product Viewer</h1>
+      <p>Find products from different categories</p>
+    </header>
+    <main>
+      <section class="search-section">
+        <h2>Search Products</h2>
+
+        <label for="category">Choose Category:</label>
+
+        <select id="category">
+          <option value="all">All Products</option>
+          <option value="electronics">Electronics</option>
+          <option value="jewelery">Jewellery</option>
+          <option value="men's clothing">Men's Clothing</option>
+          <option value="women's clothing">Women's Clothing</option>
+        </select>
+
+        <button type="button" id="searchBtn">Search</button>
+      </section>
+
+      <section class="products-section">
+        <h2>Available Products</h2>
+
+        <p id="message">Click Search to view products.</p>
+
+        <div id="productList"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>AJAX REST API Project 2a</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
